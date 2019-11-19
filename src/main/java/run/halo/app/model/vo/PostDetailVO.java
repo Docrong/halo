@@ -6,8 +6,6 @@ import lombok.ToString;
 import run.halo.app.model.dto.CategoryDTO;
 import run.halo.app.model.dto.TagDTO;
 import run.halo.app.model.dto.post.BasePostDetailDTO;
-import run.halo.app.model.entity.Category;
-import run.halo.app.model.entity.Tag;
 
 import java.util.List;
 import java.util.Set;

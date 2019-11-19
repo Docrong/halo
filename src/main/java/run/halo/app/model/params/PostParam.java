@@ -1,6 +1,5 @@
 package run.halo.app.model.params;
 
-import cn.hutool.crypto.digest.BCrypt;
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 import run.halo.app.model.dto.base.InputConverter;

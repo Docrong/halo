@@ -2,11 +2,11 @@ package run.halo.app.core;
 
 import cn.hutool.extra.servlet.ServletUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -19,8 +19,9 @@ import java.util.Objects;
 
 @Aspect
 @Component
-@Slf4j
 public class ControllerLogAop {
+
+    private static final Logger log = org.slf4j.LoggerFactory.getLogger(ControllerLogAop.class);
 
     @Pointcut("execution(*  *..*.*.controller..*.*(..))")
     public void controller() {

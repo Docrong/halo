@@ -10,8 +10,6 @@ import run.halo.app.model.dto.post.BasePostDetailDTO;
 import run.halo.app.service.BackupService;
 
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Backup controller
